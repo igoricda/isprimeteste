@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://10.81.24.27:8081
+functions:
+  isprime:
+    lang: python3-debian
+    handler: ./isprimeserver
+    image: igoricda/isprimeserver:latest
+
